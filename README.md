@@ -1,54 +1,50 @@
 # Test1
- {
-     
-     [Test]
-        public void GetAddition_Input2point4and8point6_Returns11point0()
+ 
+  [Test]
+        public void GetSubtraction_Input3point0and2point0_Returns1point0()
         {
             //Arrange
-            double number1 = 2.4;
-            double number2 = 8.6;
+            double number22 = 3.0;
+            double number23 = 3.0;
 
-            double expectedResult = number1 + number2;
-            Calc testCalc = new Calc(number1, number2);
+            double expectedResult = number22 - number23;
+            Calc testCalc = new Calc(number22, number23);
 
             //Act
-            double actualResult = testCalc.GetAddition();
+            double actualResult = testCalc.GetSubtraction();
 
             //Assert
             Assert.AreEqual(expectedResult, actualResult);
-
         }
+
         [Test]
-        public void GetAddition_Input5point5and9point6_Returns15point1()
+        public void GetSubtraction_Input12point0and2point0_Returns9point0()
         {
             //Arrange
-            double number3 = 5.5;
-            double number4 = 9.6;
+            double number22 = 12.0;
+            double number23 = 9.0;
 
-            double expectedResult = number3 + number4;
-            Calc testCalc = new Calc(number3, number4);
+            double expectedResult = number22 - number23;
+            Calc testCalc = new Calc(number22, number23);
 
             //Act
-            double actualResult = testCalc.GetAddition();
+            double actualResult = testCalc.GetSubtraction();
 
             //Assert
             Assert.AreEqual(expectedResult, actualResult);
-
         }
-
-
         [Test]
-        public void GetAddition_Input3point3and7point3_Returns10point6()
+        public void GetSubtraction_Input16point0and12point0_Returns4point0()
         {
             //Arrange
-            double number5 = 3.3;
-            double number6 = 7.3;
+            double number33 = 16.0;
+            double number34 = 12.0;
 
-            double expectedResult = number5 + number6;
-            Calc testCalc = new Calc(number5, number6);
+            double expectedResult = number33 - number34;
+            Calc testCalc = new Calc(number33, number34);
 
             //Act
-            double actualResult = testCalc.GetAddition();
+            double actualResult = testCalc.GetSubtraction();
 
             //Assert
             Assert.AreEqual(expectedResult, actualResult);
